@@ -8,13 +8,13 @@
 * Terraform installed on your local system
 * AWS CLI installed and configured on your local system
   
-_Note: If you don't want to install Terraform on your local, you can spin up an EC2 instance and create an IAM role for the EC2 with necessary permisions._ 
+_Note: If you don't want to install Terraform on your local, you can spin up an EC2 instance and create an IAM role for the EC2 with the necessary permissions._ 
 
 ### Step-1: Setup Local & Remote Repository
 
-We will create a private GitHub repository and name it as `phonebook` with the content given under `application-files`.
+We will create a private GitHub repository and name it `phonebook` with the content given under `application-files`.
 
-Create a folder in your local name as `project-13`. Clone the repository you created under this directory. We will create empty terraform files under `project-13` directory by using below command:
+Create a folder in your local name as `project-13`. Clone the repository you created under this directory. We will create empty terraform files under the `project-13` directory by using the below command:
 ```sh
 mkdir tf-files && cd tf-files && touch main.tf output.tf provider.tf sec-grp.tf user-data.sh
 ```
@@ -23,9 +23,9 @@ mkdir tf-files && cd tf-files && touch main.tf output.tf provider.tf sec-grp.tf 
 
 #### providers.tf && variables files
 
-We will use code snippets of providers we will need for this project from official [terraform documentation](https://registry.terraform.io/browse/providers).
+We will use code snippets of providers we will need for this project from the official [terraform documentation](https://registry.terraform.io/browse/providers).
 
-First we need `AWS` provider to create an environment to deploy our application in cloud. We need to configure `region` and user credentials for the aws provider. I will create `variables.tf` file to store my variable names and `myvars.auto.tfvars` to pass my variable values.
+First, we need `AWS provider to create an environment to deploy our application in the cloud. We need to configure `region` and user credentials for the aws provider. I will create `variables.tf` file to store my variable names and `myvars.auto.tfvars` to pass my variable values.
 
 We need to configure `aws credentials`. For this you can run `aws configure` command and provide your `Access Keys ID` and `Secret Access Key`.
 
