@@ -27,7 +27,7 @@ We will use code snippets of providers we will need for this project from the of
 
 First, we need `AWS provider to create an environment to deploy our application in the cloud. We need to configure `region` and user credentials for the aws provider. I will create `variables.tf` file to store my variable names and `myvars.auto.tfvars` to pass my variable values.
 
-We need to configure `aws credentials`. For this you can run `aws configure` command and provide your `Access Keys ID` and `Secret Access Key`.
+We need to configure `aws credentials`. For this, you can run `aws configure` command and provide your `Access Keys ID` and `Secret Access Key`.
 
 We also need `GitHub` provider to be able to fetch the code from our GitHub repository with Terraform. As security credentials for GitHub, we will create a TOKEN and provide it in github provider block. 
 
