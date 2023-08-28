@@ -25,11 +25,11 @@ mkdir tf-files && cd tf-files && touch main.tf output.tf provider.tf sec-grp.tf 
 
 We will use code snippets of providers we will need for this project from the official [terraform documentation](https://registry.terraform.io/browse/providers).
 
-First, we need `AWS provider to create an environment to deploy our application in the cloud. We need to configure `region` and user credentials for the aws provider. I will create `variables.tf` file to store my variable names and `myvars.auto.tfvars` to pass my variable values.
+First, we need `An AWS provider to create an environment to deploy our application in the cloud. We need to configure `region` and user credentials for the aws provider. I will create `variables.tf` file to store my variable names and `myvars.auto.tfvars` to pass my variable values.
 
-We need to configure `aws credentials`. For this, you can run `aws configure` command and provide your `Access Keys ID` and `Secret Access Key`.
+We need to configure `aws credentials`. For this, you can run the `aws configure` command and provide your `Access Keys ID` and `Secret Access Key`.
 
-We also need `GitHub` provider to be able to fetch the code from our GitHub repository with Terraform. As security credentials for GitHub, we will create a TOKEN and provide it in github provider block. 
+We also need `GitHub` provider to be able to fetch the code from our GitHub repository with Terraform. As security credentials for GitHub, we will create a TOKEN and provide it in GitHub provider block. 
 
 ![](images/github-token.png)
 
