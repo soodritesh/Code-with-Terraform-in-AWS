@@ -29,7 +29,7 @@ First, we need `An AWS provider to create an environment to deploy our applicati
 
 We need to configure `aws credentials`. For this, you can run the `aws configure` command and provide your `Access Keys ID` and `Secret Access Key`.
 
-We also need `GitHub` provider to be able to fetch the code from our GitHub repository with Terraform. As security credentials for GitHub, we will create a TOKEN and provide it in GitHub provider block. 
+We also need `GitHub` provider to be able to fetch the code from our GitHub repository with Terraform. As security credentials for GitHub, we will create a TOKEN and provide it in the GitHub provider block. 
 
 ![](images/github-token.png)
 
