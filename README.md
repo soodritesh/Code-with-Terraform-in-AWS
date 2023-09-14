@@ -21,7 +21,7 @@ mkdir tf-files && cd tf-files && touch main.tf output.tf provider.tf sec-grp.tf 
 
 ### Step-2: Create Terraform files
 
-#### providers.tf && variables files
+### providers.tf && variables files
 
 We will use code snippets of providers we will need for this project from the official [terraform documentation](https://registry.terraform.io/browse/providers).
 
