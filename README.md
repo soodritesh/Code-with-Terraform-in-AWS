@@ -31,6 +31,7 @@ We need to configure `aws credentials`. For this, you can run the `aws configure
 
 We also need `GitHub` provider to be able to fetch the code from our GitHub repository with Terraform. As security credentials for GitHub, we will create a TOKEN and provide it in the GitHub provider block. 
 
+
 ![](images/github-token.png)
 
 Below is the content for our `providers.tf`:
